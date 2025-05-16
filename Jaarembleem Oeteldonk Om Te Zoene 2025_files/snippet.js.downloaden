@@ -1,0 +1,35 @@
+var _wssq = _wssq || [],
+setResizeFunction= false,
+sooqrAccount = '119891-1', //Set the correct Sooqr account ID
+container = '#maincontent', // Set the target for the Sooqr container
+excludePlaceholder = 'Zoeken...', // Exclude this placeholder text
+searchFieldId = 'search', // Search field ID, for multiple search fields use an array ['1','2']
+position = 'screen-middle',
+positionOption = {top:0}; // Empty for left or right
+
+_wssq.push(['_load', { 'suggest' : { 'account' : 'SQ-' + sooqrAccount, 'version' : 4, fieldId : searchFieldId, containerParent: container}}]);
+_wssq.push(['suggest._setPosition', position, positionOption]);
+_wssq.push(['suggest._setLocale', 'nl_NL']);
+_wssq.push(['suggest._excludePlaceholders', excludePlaceholder]);
+_wssq.push(['suggest._hideEmptyFilters', true]);
+_wssq.push(['suggest._bindEvent', 'open', function() {
+if(!setResizeFunction) {$jQ( window ).resize(function() {if($jQ('.sooqrSearchContainer-' + sooqrAccount).is(':visible')) {websight.sooqr.instances['SQ-' + sooqrAccount].positionContainer(null, null, true);}});setResizeFunction = true;}
+    $jQ(container+">*").not('.sooqrSearchContainer').addClass('SooqrHide');
+    $jQ('.breadcrumbs').not('.sooqrSearchContainer').addClass('SooqrHide');
+}]);
+
+
+_wssq.push(['suggest._bindEvent', 'close', function() {
+    $jQ('.SooqrHide').removeClass('SooqrHide');
+}]);
+
+  (function() {
+      var ws = document.createElement('script'); ws.type = 'text/javascript'; ws.async = true;
+      ws.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'static.spotlersearch.com/sooqr.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ws, s);
+  })();
+  (function() {
+    var ws = document.createElement('script'); ws.type = 'text/javascript'; ws.async = true;
+    ws.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'spotlersearchanalytics.com/insights.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ws, s);
+})();
