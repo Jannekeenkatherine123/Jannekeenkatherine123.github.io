@@ -1,14 +1,23 @@
 <html>
     <head>
-         function toggleBox() {
-                var div = document.getElementById('mijnDiv');
-                  div.style.display = 'none';  /* maakt het blokje onzichtbaar */ }
         <h1>jouw winkelwagen</h1>
+        <script>
+            function toggleBox1() {
+                var div = document.getElementById('winkelwagenitem1');
+                div.style.display = 'none';  /* maakt het blokje onzichtbaar */ 
+            }
+            function toggleBox2() {
+                var div = document.getElementById('winkelwagenitem2');
+                div.style.display = 'none';  /* maakt het blokje onzichtbaar */ 
+            }
+        </script>
 
     </head>
         <body>
-            <img src="2009.jpg" alt="oeteldonk jaarembleem 2009"> 
-            <img src="2025-jaarembleem.jpg" alt="oeteldonk jaarembleem 2025>"
-            
+            <div>
+            <button onclick="toggleBox();"></button>
+            <img id="2009.jpg" alt="oeteldonk jaarembleem 2009"> 
+            <img id= "2025-jaarembleem.jpg" alt="oeteldonk jaarembleem 2025>"
+            </div>
         </body>
 </html>
