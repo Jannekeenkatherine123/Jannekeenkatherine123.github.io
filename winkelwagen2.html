@@ -1,61 +1,102 @@
 <html>
-    <head>
-        <script>
-            function toggleBox1() {
-                var div = document.getElementById('winkelwagenitem1');
-                div.style.display = 'none';  /* maakt het blokje onzichtbaar */ 
-            }
-            function toggleBox2() {
-                var div = document.getElementById('winkelwagenitem2');
-                div.style.display = 'none';  /* maakt het blokje onzichtbaar */ 
-            }
-        </script>
-        <style>
-        
-            #kop1 {
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            text-align: center;
+        }
+
+        #kop1 {
             display: flex;
             justify-content: space-around;
             background-color: rgb(240, 125, 125);
+            padding: 10px 0;
         }
+
         #kop1 a {
-            padding: 5px;
+            padding: 5px 15px;
             text-decoration: none;
             color: rgb(250, 0, 0);
+            font-weight: bold;
         }
-            body{
-                margin: 0;
-                padding: 0;
-                font-family: arial, sans-serif;
-                text-align: center;
-            }
-            #kleur1 {
-                background-color: red;
-                width: 100%;
-                height: 5px;
-            }
-            #kleur2 {
-                background: white;
-                width: 100%;
-                height: 5px;
-            }
-            #kleur3 {
-                background: yellow;
-                width: 100%;
-                height: 5px;
-            }
-            #winkelwagenitem1, #winkelwagenitem2 {
-                display: flex;
-                justify-content: center;
-            }
-            .winkelwageninfo {
-                margin-top: 10%;
-            }
-            footer {
+
+        #kleur1 {
+            background-color: red;
+            width: 100%;
+            height: 5px;
+        }
+
+        #kleur2 {
+            background: white;
+            width: 100%;
+            height: 5px;
+        }
+
+        #kleur3 {
+            background: yellow;
+            width: 100%;
+            height: 5px;
+        }
+
+        h1 {
+            margin-top: 30px;
+            color: #333;
+        }
+
+        .winkelwagenitem {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            background-color: #0000000a;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .winkelwagenitem img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .winkelwageninfo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .winkelwageninfo p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .winkelwageninfo button {
+            background-color: #ff4343;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .winkelwageninfo button:hover {
+            background-color: #e62319de;
+        }
+
+        footer {
             background-color: rgba(255, 204, 101, 1);
             color: black;
             text-align: center;
             padding: 20px;
             font-size: 14px;
+            margin-top: 40px;
         }
 
         footer a {
@@ -66,53 +107,57 @@
         footer a:hover {
             text-decoration: underline;
         }
-        </style>
-    </head>
-        <body>
-             <h1 id="kop1">
+    </style>
+
+    <script>
+        function toggleBox1() {
+            var div = document.getElementById('winkelwagenitem1');
+            div.style.display = 'none';
+        }
+        function toggleBox2() {
+            var div = document.getElementById('winkelwagenitem2');
+            div.style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <h1 id="kop1">
         <a href="index1.html">Home</a>
         <a href="nieuw.html">Shoppen</a>
         <a href="Geschiedenis2.html">Geschiedenis</a>
         <a href="winkelwagen2.html">Winkelwagen</a>
         <a href="sale.html">Sale</a>
-            </h1>
+    </h1>
 
-            <div id="kleur1"></div>
-            <div id="kleur2"></div>
-            <div id="kleur3"></div>
-<h1>in jouw winkelwagen</h1>
-            <div id="winkelwagenitem1" style="margin-bottom: 20px;">
-                <img src="2009.jpg" alt="oeteldonk jaarembleem 2009 (winkelwagen item 1)">
-                <div class="winkelwageninfo">
-                    <p>1x</p>
-                    <button onclick="toggleBox1()">klik hier om een item te verwijderen</button>
-                </div>
-            
-            </div>
+    <div id="kleur1"></div>
+    <div id="kleur2"></div>
+    <div id="kleur3"></div>
 
-            <div id="winkelwagenitem2" style="margin-bottom: 20px;">
-            <img src="2023-jaarembleem.jpg" alt="oeteldonk jaarembleem 20025 (winkelwagen item 2)" style="max-width:200px;">
-            <div class="winkelwageninfo">
-                <p>1x</p>
-                <button onclick="toggleBox2()">klik hier om het item te verwijderen</button>
-            </div>
-            
-            </div>
-            <div>
-                <div id="kleur1">
-                </div>
-                <div id="kleur2">
-                </div>
-                <div id="kleur3">
-                </div>
-            </div>
-            </body>
-            </html>
+    <h1>In jouw winkelwagen</h1>
 
-            <footer>
-        <p>&copy; oetelatelier. Alle rechten voorbehouden.</p>
+    <div id="winkelwagenitem1" class="winkelwagenitem">
+        <img src="2009.jpg" alt="Oeteldonk jaarembleem 2009">
+        <div class="winkelwageninfo">
+            <p>1x</p>
+            <button onclick="toggleBox1()">Klik hier om dit item te verwijderen</button>
+        </div>
+    </div>
+
+    <div id="winkelwagenitem2" class="winkelwagenitem">
+        <img src="2023-jaarembleem.jpg" alt="Oeteldonk jaarembleem 2023">
+        <div class="winkelwageninfo">
+            <p>1x</p>
+            <button onclick="toggleBox2()">Klik hier om dit item te verwijderen</button>
+        </div>
+    </div>
+
+    <div id="kleur1"></div>
+    <div id="kleur2"></div>
+    <div id="kleur3"></div>
+
+    <footer>
+        <p>&copy; Oetelatelier. Alle rechten voorbehouden.</p>
         <p><a href="nieuw.html">Klik hier om te shoppen</a></p>
     </footer>
-            
-        </body>
+</body>
 </html>

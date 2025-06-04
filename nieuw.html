@@ -2,45 +2,64 @@
 <html>
     <head>
         <style>
-            #kop1 {
-                color: white;
-            }
-            body {
-                background-image: url('knillis-confetti-16-9.jpg');
-                background-repeat: no-repeat;
-                background-attachment: fixed;  
-                background-size: 100% 100%;
-            }
-            #kop1 {
-                display: flex;
-                justify-content: space-around;
-                background-color: rgb(240, 125, 125);
-            }
-            #kop1 a {
-                padding: 5px;
-                text-decoration: none;
-                color: rgb(250, 0, 0);
-            }
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-image: url('knillis-confetti-16-9.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
 
-            div{
-                padding: 1%;
-                background-color: #ffffffaf;
-            }
-            .rij {
-                display: flex;
-                justify-content: space-around;
-            }
-            .product {
-                width: 20%;
-            }
-            .product img {
-                width: 100%;
-            }
+        nav#kop1 {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(240, 125, 125);
+            padding: 15px;
+        }
 
-            .winkelwagenbutton{
+        nav#kop1 a {
+            padding: 5px;
+            text-decoration: none;
+            color: rgb(250, 0, 0);
+        }
 
-            }
-            footer {
+        div {
+            padding: 1%;
+            background-color: #ffffffaf;
+        }
+
+        .rij {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            width: 20%;
+            margin-bottom: 20px;
+        }
+
+        .product img {
+            width: 100%;
+        }
+
+        .winkelwagenbutton {
+            margin-top: 5px;
+            padding: 8px 12px;
+            background-color: rgb(250, 0, 0);
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .winkelwagenbutton:hover {
+            background-color: rgb(200, 0, 0);
+        }
+
+        footer {
             background-color: rgba(255, 204, 101, 1);
             color: black;
             text-align: center;
@@ -59,14 +78,14 @@
         </style>
     </head>
     <body>
-        <h1 id="kop1">
+        <nav id="kop1">
             <a href="index1.html">Home</a>
             <a href="nieuw.html">Shoppen</a>
             <a href="Geschiedenis2.html">Geschiedenis</a>
             <a href="winkelwagen2.html">Winkelwagen</a>
-            <a href="Sale.html">Sale</a>
-        </h1>
-        <h1 id="kop1">Shoppen</h1>
+            <a href="sale.html">Sale</a>
+        </nav>
+
         <div class="rij">
             <div class="product">
                 <img src="2025-jaarembleem.jpg" alt="jaarembleem 2025">
@@ -282,11 +301,11 @@
             </div>
         </div>
         </div>
-        <footer>
+    </body>
+    <footer>
         <p>&copy; oetelatelier. Alle rechten voorbehouden.</p>
         <p><a href="nieuw.html">Klik hier om te shoppen</a></p>
     </footer>
-    </body>
 </html>
 
             
