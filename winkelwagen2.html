@@ -1,6 +1,5 @@
 <html>
     <head>
-        <h1>jouw winkelwagen</h1>
         <script>
             function toggleBox1() {
                 var div = document.getElementById('winkelwagenitem1');
@@ -11,13 +10,88 @@
                 div.style.display = 'none';  /* maakt het blokje onzichtbaar */ 
             }
         </script>
-
+        <style>
+        
+            #kop1 {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(240, 125, 125);
+        }
+        #kop1 a {
+            padding: 5px;
+            text-decoration: none;
+            color: rgb(250, 0, 0);
+        }
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: arial, sans-serif;
+                text-align: center;
+            }
+            #kleur1 {
+                background-color: red;
+                width: 100%;
+                height: 5px;
+            }
+            #kleur2 {
+                background: white;
+                width: 100%;
+                height: 5px;
+            }
+            #kleur3 {
+                background: yellow;
+                width: 100%;
+                height: 5px;
+            }
+            #winkelwagenitem1, #winkelwagenitem2 {
+                display: flex;
+                justify-content: center;
+            }
+            .winkelwageninfo {
+                margin-top: 10%;
+            }
+        </style>
     </head>
         <body>
-            <div>
-            <button onclick="toggleBox();"></button>
-            <img id="2009.jpg" alt="oeteldonk jaarembleem 2009"> 
-            <img id= "2025-jaarembleem.jpg" alt="oeteldonk jaarembleem 2025>"
+             <h1 id="kop1">
+        <a href="index.html">Home</a>
+        <a href="nieuw.html">Shoppen</a>
+        <a href="Geschiedenis2.html">Geschiedenis</a>
+        <a href="winkelwagen2.html">Winkelwagen</a>
+        <a href="sale.html">Sale</a>
+            </h1>
+
+            <div id="kleur1"></div>
+            <div id="kleur2"></div>
+            <div id="kleur3"></div>
+<h1>in jouw winkelwagen</h1>
+            <div id="winkelwagenitem1" style="margin-bottom: 20px;">
+                <img src="2009.jpg" alt="oeteldonk jaarembleem 2009 (winkelwagen item 1)">
+                <div class="winkelwageninfo">
+                    <p>1x</p>
+                    <button onclick="toggleBox1()">klik hier om een item te verwijderen</button>
+                </div>
+            
             </div>
+
+            <div id="winkelwagenitem2" style="margin-bottom: 20px;">
+            <img src="2023-jaarembleem.jpg" alt="oeteldonk jaarembleem 20025 (winkelwagen item 2)" style="max-width:200px;">
+            <div class="winkelwageninfo">
+                <p>1x</p>
+                <button onclick="toggleBox2()">klik hier om het item te verwijderen</button>
+            </div>
+            
+            </div>
+            <div>
+                <div id="kleur1">
+                </div>
+                <div id="kleur2">
+                </div>
+                <div id="kleur3">
+                </div>
+            </div>
+            </body>
+            </html>
+            
         </body>
 </html>
