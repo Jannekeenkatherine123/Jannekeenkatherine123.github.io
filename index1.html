@@ -3,41 +3,32 @@
 <head>
     <title>oetelatelier</title>
     <style>
-        #kop1 {
-            color: white;
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-image: url('knillis-confetti-16-9.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
         }
-        #kop1 {
+
+        nav#kop1 {
             display: flex;
             justify-content: space-around;
             background-color: rgb(240, 125, 125);
             padding: 15px;
         }
-        #kop1 a {
+
+        nav#kop1 a {
             padding: 5px;
             text-decoration: none;
             color: rgb(250, 0, 0);
         }
 
-        html, body {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        background-image: url('knillis-confetti-16-9.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;  
-        background-size: cover;
-        min-height: 100vh;
-        margin: 0%;
-        }
-
-
-        .content{
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
         .content {
-            flex: 1;
+            flex: 1; /* duwt footer naar beneden */
             color: white;
             text-align: center;
             padding: 100px 20px;
@@ -52,7 +43,7 @@
         }
 
         footer a {
-            color: rgb(250, 0, 0);
+            color: rgb(23, 1, 1);
             text-decoration: none;
         }
 
@@ -72,7 +63,7 @@
 
     <div class="content">
         <h2>Welkom bij Oetelatelier!</h2>
-        <p>Bekijk onze nieuwste producten of duik in de geschiedenis van Oeteldonk.</p>
+        <p>Bekijk onze producten of duik in de geschiedenis van Oeteldonk.</p>
     </div>
 
     <footer>
