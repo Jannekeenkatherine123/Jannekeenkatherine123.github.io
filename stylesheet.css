@@ -1,0 +1,205 @@
+/* Voor html en body gelden volgende regels */
+html, body {
+    height: 0%;
+    display: flex;
+    margin: 0%;
+    flex-direction: column;
+    background-image: url('knillis-confetti-16-9.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Navigatiebalk bovenaan de pagina */
+nav#kop1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(240, 125, 125);
+    padding: 15px;
+}
+
+/* Stijl voor navigatielinks */
+nav#kop1 a {
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(250, 0, 0);
+}
+
+/* Hoofdinhoud van de pagina */
+.content {
+    flex: 1;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Voettekst onderaan de pagina */
+footer {
+    background-color: rgba(255, 204, 101, 1);
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Links in de footer */
+footer a {
+    color: rgb(23, 1, 1);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+Homepage hierboven
+
+/* Voor html en body gelden volgende regels */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url('oeteldonkse-vlag-carnaval-hertogenboschVAopIFNbYU0od_600x600@2x.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/* Navigatiebalk bovenaan de pagina */
+nav#kop1 {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(240, 125, 125);
+  padding: 15px;
+}
+
+/* Opmaak van de links in de navigatie */
+nav#kop1 a {
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(250, 0, 0);
+}
+
+/* Voettekst onderaan de pagina */
+footer {
+  background-color: rgba(255, 204, 101, 1);
+  color: black;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* Linkjes in de footer */
+footer a {
+  color: rgb(23, 1, 1);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Stijl voor titels binnen de boxen */
+.box h1 {
+  color: black;
+}
+
+/* Elke historische gebeurtenis wordt getoond in een box */
+.box {
+  padding: 20px;
+  margin: 10px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+/* Afbeeldingen binnen boxen */
+.box img {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+Geschiedenis hierboven
+
+/* Algemene instellingen voor de hele pagina */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('knillis-confetti-16-9.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/* Navigatiebalk bovenaan */
+nav#kop1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(240, 125, 125);
+    padding: 15px;
+}
+
+/* Opmaak van de links in de navigatie */
+nav#kop1 a {
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(250, 0, 0);
+}
+
+/* Algemene stijl voor alle divs */
+div {
+    padding: 1%;
+    background-color: #ffffffaf;
+}
+
+/* Rij waarin producten worden geplaatst */
+.rij {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Instellingen voor elk product */
+.product {
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+/* Afbeeldingen van de producten */
+.product img {
+    width: 100%;
+}
+
+/* Opmaak van de knop om iets toe te voegen aan winkelwagen */
+.winkelwagenbutton {
+    margin-top: 5px;
+    padding: 8px 12px;
+    background-color: rgb(250, 0, 0);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Wanneer je over de knop zweeft */
+.winkelwagenbutton:hover {
+    background-color: rgb(200, 0, 0);
+}
+
+/* Voettekst onderaan de pagina */
+footer {
+    background-color: rgba(255, 204, 101, 1);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Linkjes in de footer */
+footer a {
+    color: rgb(23, 1, 1);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
