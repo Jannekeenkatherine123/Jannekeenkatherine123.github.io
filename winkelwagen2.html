@@ -1,28 +1,29 @@
 <html>
 <head>
+    <!-- Stijl voor de opmaak van de hele pagina -->
     <style>
         body {
-            margin: 0;
+            margin: 0; /* Verwijdert standaard buitenmarges */
             padding: 0;
             font-family: Arial, sans-serif;
             background-color: white;
             text-align: center;
         }
-
+/* Navigatiebalk bovenaan */
         #kop1 {
-            display: flex;
-            justify-content: space-around;
-            background-color: rgb(240, 125, 125);
+            display: flex; /* Zet de links naast elkaar */
+            justify-content: space-around;  /* Verdeel de ruimte gelijkmatig */
+            background-color: rgb(240, 125, 125); /* Roze achtergrondkleur */
             padding: 10px 0;
         }
-
+/* Links in de navigatiebalk */
         #kop1 a {
             padding: 5px 15px;
-            text-decoration: none;
-            color: rgb(250, 0, 0);
+            text-decoration: none;  /* Geen onderstreping */
+            color: rgb(250, 0, 0);  /* Rode tekstkleur */
             font-weight: bold;
         }
-
+ /* Kleurenbalken onder de navigatie */
         #kleur1 {
             background-color: red;
             width: 100%;
@@ -40,31 +41,31 @@
             width: 100%;
             height: 5px;
         }
-
+ /* Titel bovenaan de pagina */
         h1 {
             margin-top: 30px;
             color: #333;
         }
-
+/* Container voor één item in de winkelwagen */
         .winkelwagenitem {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 30px;
+            gap: 30px;  /* Ruimte tussen afbeelding en tekst/knop */
             margin: 20px auto;
             padding: 20px;
             max-width: 600px;
-            background-color: #0000000a;
+            background-color: #0000000a; /* Lichtgrijze achtergrond */
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Schaduw voor diepte */ 
         }
-
+/* Afbeelding van het product */
         .winkelwagenitem img {
             width: 150px;
             height: auto;
             border-radius: 10px;
         }
-
+ /* Informatie en knop naast het plaatje */
         .winkelwageninfo {
             display: flex;
             flex-direction: column;
@@ -89,7 +90,7 @@
         .winkelwageninfo button:hover {
             background-color: #e62319de;
         }
-
+ /* Voettekst onderaan de pagina */
         footer {
             background-color: rgba(255, 204, 101, 1);
             color: black;
@@ -108,7 +109,7 @@
             text-decoration: underline;
         }
     </style>
-
+ <!-- JavaScript functies om items uit winkelwagen te verwijderen -->
     <script>
         function toggleBox1() {
             var div = document.getElementById('winkelwagenitem1');
@@ -121,6 +122,7 @@
     </script>
 </head>
 <body>
+     <!-- Navigatiebalk -->
     <nav id="kop1">
         <a href="index1.html">Home</a>
         <a href="nieuw.html">Shoppen</a>
@@ -128,13 +130,13 @@
         <a href="winkelwagen2.html">Winkelwagen</a>
         <a href="sale.html">Sale</a>
     </nav>
-
+<!-- Oeteldonk-kleuren -->
     <div id="kleur1"></div>
     <div id="kleur2"></div>
     <div id="kleur3"></div>
-
+<!-- Titel -->
     <h1>In jouw winkelwagen</h1>
-
+<!-- Eerste item in winkelwagen -->
     <div id="winkelwagenitem1" class="winkelwagenitem">
         <img src="2009.jpg" alt="Oeteldonk jaarembleem 2009">
         <div class="winkelwageninfo">
@@ -142,7 +144,7 @@
             <button onclick="toggleBox1()">Klik hier om dit item te verwijderen</button>
         </div>
     </div>
-
+ <!-- Tweede item in winkelwagen -->
     <div id="winkelwagenitem2" class="winkelwagenitem">
         <img src="2023-jaarembleem.jpg" alt="Oeteldonk jaarembleem 2023">
         <div class="winkelwageninfo">
@@ -150,11 +152,11 @@
             <button onclick="toggleBox2()">Klik hier om dit item te verwijderen</button>
         </div>
     </div>
-
+  <!-- Nog een keer Oeteldonk-kleuren onderaan -->
     <div id="kleur1"></div>
     <div id="kleur2"></div>
     <div id="kleur3"></div>
-
+ <!-- Voettekst -->
     <footer>
         <p>&copy; Oetelatelier. Alle rechten voorbehouden.</p>
         <p><a href="nieuw.html">Klik hier om te shoppen</a></p>

@@ -1,69 +1,70 @@
 <html>
 <head>
+     <!-- CSS voor opmaak van de pagina -->
     <style>
         html, body {
-            height: 100%;
-            margin: 0;
+            height: 100%; /* Zorgt dat de achtergrond de volledige hoogte gebruikt */
+            margin: 0; /* Verwijdert standaardmarges van de browser */
             display: flex;
-            flex-direction: column;
-            background-image: url('knillis-confetti-16-9.jpg');
-            background-repeat: no-repeat;
+            flex-direction: column; /* Zet bodyinhoud onder elkaar */
+            background-image: url('knillis-confetti-16-9.jpg');  /* Achtergrondafbeelding */
+            background-repeat: no-repeat; 
             background-attachment: fixed;
-            background-size: 100% 100%;
+            background-size: 100% 100%; /*vult hele scherm*/
         }
 
         nav#kop1 {
-            display: flex;
-            justify-content: space-around;
-            background-color: rgb(240, 125, 125);
-            padding: 15px;
+            display: flex; /* Zet de navigatielinks op één rij */
+            justify-content: space-around;   /* Verdeel links gelijkmatig */
+            background-color: rgb(240, 125, 125); /* roze achtergrond */
+            padding: 15px; /* Binnenmarge rondom de links */
         }
 
         nav#kop1 a {
-            padding: 5px;
-            text-decoration: none;
-            color: rgb(250, 0, 0);
+            padding: 5px; /* Binnenruimte rondom tekst */
+            text-decoration: none;  /* Verwijdert onderstreping van de link */
+            color: rgb(250, 0, 0); /* Rode kleur voor links */
         }
 
         div {
             padding: 1%;
-            background-color: #ffffffaf;
+            background-color: #ffffffaf;  /* Witte achtergrond met */
         }
 
         .rij {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            display: flex;  /* Zet producten naast elkaar */
+            justify-content: space-around;  /* Gelijke ruimte tussen producten */
+            flex-wrap: wrap;  /* Laat de producten op de volgende regel lopen indien nodig */
         }
 
-        .product {
-            width: 20%;
-            margin-bottom: 20px;
+        .product { 
+            width: 20%;   /* Vier producten per rij op grote schermen */
+            margin-bottom: 20px;   /* Ruimte onder elk productblok */
         }
 
         .product img {
-            width: 100%;
+            width: 100%;  /* Afbeelding vult gehele breedte van het scherm */
         }
 
         .winkelwagenbutton {
             margin-top: 5px;
             padding: 8px 12px;
-            background-color: rgb(250, 0, 0);
+            background-color: rgb(250, 0, 0);  /* Heldere rode kleur voor de knop */
             color: white;
-            border-radius: 8px;
+            border-radius: 8px;  /* Afgeronde hoeken */
             cursor: pointer;
         }
 
         .winkelwagenbutton:hover {
-            background-color: rgb(200, 0, 0);
+            background-color: rgb(200, 0, 0);  /* Donkerdere kleur bij hover */
         }
 
         .prijs {
-            color: red;
+            color: red;  /* Rode kleur voor prijs */
         }
 
         footer {
-            background-color: rgba(255, 204, 101, 1);
+            background-color: rgba(255, 204, 101, 1);  /* Goudgele kleur */
             color: black;
             text-align: center;
             padding: 20px;
@@ -71,16 +72,17 @@
         }
 
         footer a {
-            color: rgb(23, 1, 1);
+            color: rgb(23, 1, 1);  /* Donkerrode kleur voor footer-links */
             text-decoration: none;
         }
 
         footer a:hover {
-            text-decoration: underline;
+            text-decoration: underline;  /* Onderstreping voor duidelijkheid */
         }
     </style>
 </head>
 <body>
+     <!-- Navigatiebalk bovenaan de pagina -->
     <nav id="kop1">
         <a href="index1.html">Home</a>
         <a href="nieuw.html">Shoppen</a>
@@ -90,8 +92,9 @@
     </nav>
 
     <div class="rij">
-
+ <!-- rij met producten -->
         <div class="rij">
+            <!-- Elk product bestaat uit een afbeelding, prijs en knop --> 
         <div class="product"><img src="2024-jaarembleem.jpg" alt="jaarembleem 2024"><p class="prijs">€4,50</p><button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button></div>
         <div class="product"><img src="2023-jaarembleem.jpg" alt="jaarembleem 2023"><p class="prijs">€4,50</p><button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button></div>
         <div class="product"><img src="jaarembleem2022.jpg" alt="jaarembleem 2022"><p class="prijs">€4,50</p><button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button></div>
@@ -104,10 +107,10 @@
         <div class="product"><img src="jaarembleem2018.jpg" alt="jaarembleem 2018"><p class="prijs">€4,50</p><button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button></div>
         <div class="product"><img src="2017gr.jpg" alt="jaarembleem 2017"><p class="prijs">€4,50</p><button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button></div>
     </div>
-</body>
 <footer>
     <p>&copy; oetelatelier. Alle rechten voorbehouden.</p>
     <p><a href="nieuw.html">Klik hier om te shoppen</a></p>
 </footer>
+</body>
 </html>
 

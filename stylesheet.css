@@ -52,8 +52,8 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-Homepage hierboven
 
+/*hieronder komt nieuw/shoppen*/
 /* Voor html en body gelden volgende regels */
 html, body {
   
@@ -205,4 +205,93 @@ footer a:hover {
     text-decoration: underline;
 }
 
-nieuw hierboven
+/*hieronder komt sale*/
+/* Algemene instellingen voor de volledige pagina */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('knillis-confetti-16-9.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/* Navigatiebalk bovenaan de pagina */
+nav#kop1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(240, 125, 125);
+    padding: 15px;
+}
+
+/* Navigatielinks */
+nav#kop1 a {
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(250, 0, 0);
+}
+
+/* Algemene div-opmaak voor secties */
+div {
+    padding: 1%;
+    background-color: #ffffffaf;
+}
+
+/* Rij-container voor producten */
+.rij {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Individueel productblok */
+.product {
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+/* Afbeeldingen binnen productblok */
+.product img {
+    width: 100%;
+}
+
+/* Prijsstijl */
+.prijs {
+    color: red;
+}
+
+/* Knopstijl voor winkelwagen */
+.winkelwagenbutton {
+    margin-top: 5px;
+    padding: 8px 12px;
+    background-color: rgb(250, 0, 0);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Hover-effect voor knop */
+.winkelwagenbutton:hover {
+    background-color: rgb(200, 0, 0);
+}
+
+/* Footer onderaan de pagina */
+footer {
+    background-color: rgba(255, 204, 101, 1);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Links in footer */
+footer a {
+    color: rgb(23, 1, 1);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
