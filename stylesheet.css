@@ -53,7 +53,8 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/*hieronder komt nieuw/shoppen*/
+
+/*hieronder komt geschiedenis*/
 /* Voor html en body gelden volgende regels */
 html, body {
   
@@ -118,8 +119,8 @@ footer a:hover {
   margin-top: 10px;
   border-radius: 8px;
 }
-Geschiedenis hierboven
 
+/*hieronder komt nieuw/*
 /* Algemene instellingen voor de hele pagina */
 html, body {
     height: 100%;
@@ -205,6 +206,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
+
 /*hieronder komt sale*/
 /* Algemene instellingen voor de volledige pagina */
 html, body {
@@ -287,6 +289,125 @@ footer {
 }
 
 /* Links in footer */
+footer a {
+    color: rgb(23, 1, 1);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* hieronder winkelwagen/*
+/* Algemene instellingen voor de pagina */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+}
+
+/* Navigatiebalk bovenaan */
+#kop1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(240, 125, 125);
+    padding: 10px 0;
+}
+
+/* Navigatielinks */
+#kop1 a {
+    padding: 5px 15px;
+    text-decoration: none;
+    color: rgb(250, 0, 0);
+    font-weight: bold;
+}
+
+/* Oeteldonk-kleurenbalken */
+#kleur1 {
+    background-color: red;
+    width: 100%;
+    height: 5px;
+}
+
+#kleur2 {
+    background: white;
+    width: 100%;
+    height: 5px;
+}
+
+#kleur3 {
+    background: yellow;
+    width: 100%;
+    height: 5px;
+}
+
+/* Titel */
+h1 {
+    margin-top: 30px;
+    color: #333;
+}
+
+/* Winkelwagen-item blok */
+.winkelwagenitem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #0000000a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Productafbeelding */
+.winkelwagenitem img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Informatieblok bij het item */
+.winkelwageninfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.winkelwageninfo p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Verwijderknop */
+.winkelwageninfo button {
+    background-color: #ff4343;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.winkelwageninfo button:hover {
+    background-color: #e62319de;
+}
+
+/* Voettekst */
+footer {
+    background-color: rgba(255, 204, 101, 1);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
 footer a {
     color: rgb(23, 1, 1);
     text-decoration: none;
