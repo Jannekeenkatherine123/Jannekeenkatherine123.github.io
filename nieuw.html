@@ -1,316 +1,114 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <!-- Hier begint de opmaak van de pagina -->
-        <style>
+<head>
+     <!-- CSS voor opmaak van de pagina -->
+    <style>
         html, body {
-            height: 100%; /* Laat de achtergrondafbeelding het hele scherm vullen */
-            margin: 0; /* Verwijdert standaard witruimte */
+            height: 100%; /* Zorgt dat de achtergrond de volledige hoogte gebruikt */
+            margin: 0; /* Verwijdert standaardmarges van de browser */
             display: flex;
-            flex-direction: column; /* Zorgt dat de inhoud van boven naar beneden loopt */
-            background-image: url('knillis-confetti-16-9.jpg'); /* Achtergrondafbeelding instellen */
+            flex-direction: column; /* Zet bodyinhoud onder elkaar */
+            background-image: url('knillis-confetti-16-9.jpg');  /* Achtergrondafbeelding */
             background-repeat: no-repeat; 
             background-attachment: fixed;
-            background-size: 100% 100%;  /* Laat de achtergrond volledig vullen */
+            background-size: cover; /* aangepast van 100% 100% naar cover */
         }
-/* Navigatiebalk bovenaan */
+
         nav#kop1 {
-            display: flex; /* Zet de links naast elkaar */
-            justify-content: space-around; /* Verspreid de links gelijk over de breedte */
-            background-color: rgb(240, 125, 125); /* Roze achtergrondkleur */
-            padding: 15px; /* Ruimte rondom de tekst in de balk */
+            display: flex; /* Zet de navigatielinks op één rij */
+            justify-content: space-around;   /* Verdeel links gelijkmatig */
+            background-color: rgb(240, 125, 125); /* roze achtergrond */
+            padding: 15px; /* Binnenmarge rondom de links */
         }
-/* Opmaak van de links in de navigatie */
+
         nav#kop1 a {
-            padding: 5px;
-            text-decoration: none; /* Geen onderstreping */
-            color: rgb(250, 0, 0); /* Rode tekstkleur */
+            padding: 5px; /* Binnenruimte rondom tekst */
+            text-decoration: none;  /* Verwijdert onderstreping van de link */
         }
-/* Algemene instellingen voor divs */
+
         div {
             padding: 1%;
-            background-color: #ffffffaf; /* Witte achtergrond voor leesbaarheid */
+            background-color: #ffffffaf;  /* Witte achtergrond met */
         }
-        }
-/* Rij waarin producten worden geplaatst */
+
         .rij {
-            display: flex;
-            justify-content: space-around;  /* Plaats producten met ruimte ertussen */
-            flex-wrap: wrap; /* Laat producten automatisch onder elkaar gaan bij smalle schermen */
+            display: flex;  /* Zet producten naast elkaar */
+            justify-content: space-around;  /* Gelijke ruimte tussen producten */
+            flex-wrap: wrap;  /* Laat de producten op de volgende regel lopen indien nodig */
         }
-/* Instellingen voor elk product */
-        .product {
-            width: 20%; /* Elk product neemt 20% van de rijbreedte in */
-            margin-bottom: 20px; /* Ruimte onder elk product */
+
+        .product { 
+            width: 20%;   /* Vier producten per rij op grote schermen */
+            margin-bottom: 20px;   /* Ruimte onder elk productblok */
         }
-/* Afbeeldingen van de producten */
+
         .product img {
-            width: 100%;  /* Laat afbeelding de hele breedte van het productblok vullen */
+            width: 100%;  /* Afbeelding vult gehele breedte van het scherm */
         }
-/* Opmaak van de knop om iets toe te voegen aan winkelwagen */
+
         .winkelwagenbutton {
             margin-top: 5px;
             padding: 8px 12px;
-            background-color: rgb(250, 0, 0); /* Rode knopkleur */
-            color: white; /* Witte tekst */
-            border-radius: 8px; /* Afgeronde hoeken */
-            cursor: pointer; /* Wijzig de muisaanwijzer */
+            background-color: rgb(250, 0, 0);  /* Heldere rode kleur voor de knop */
+            color: white;
+            border-radius: 8px;  /* Afgeronde hoeken */
+            cursor: pointer;
         }
-/* Wanneer je over de knop zweeft */
+
         .winkelwagenbutton:hover {
-            background-color: rgb(200, 0, 0); /* Donkerder rood bij hover */
+            background-color: rgb(200, 0, 0);  /* Donkerdere kleur bij hover */
         }
-/* Voettekst onderaan de pagina */
+
+        .prijs {
+            color: red;  /* Rode kleur voor prijs */
+        }
+
         footer {
-            background-color: rgba(255, 204, 101, 1); /* Goudgele achtergrondkleur */
+            background-color: rgba(255, 204, 101, 1);  /* Goudgele kleur */
             color: black;
             text-align: center;
             padding: 20px;
             font-size: 14px;
         }
-/* Linkjes in de footer */
+
         footer a {
-            color: rgb(23, 1, 1); /* Donkerbruine tekstkleur */
-            text-decoration: none; 
+            color: rgb(23, 1, 1);  /* Donkerrode kleur voor footer-links */
+            text-decoration: none;
         }
 
         footer a:hover {
-            text-decoration: underline; /* Onderstreept de link bij hover */
+            text-decoration: underline;  /* Onderstreping voor duidelijkheid */
         }
-        </style>
-    </head>
-    <body>
-        <!-- Navigatiebalk bovenaan de pagina -->
-        <nav id="kop1">
-            <a href="index1.html">Home</a>
-            <a href="nieuw.html">Shoppen</a>
-            <a href="Geschiedenis3.html">Geschiedenis</a>
-            <a href="winkelwagen2.html">Winkelwagen</a>
-            <a href="sale.html">Sale</a>
-        </nav>
-<!-- Producten worden per rij weergegeven -->
+    </style>
+</head>
+<body>
+     <!-- Navigatiebalk bovenaan de pagina -->
+    <nav id="kop1">
+        <a href="index1.html">Home</a>
+        <a href="nieuw.html">Shoppen</a>
+        <a href="Geschiedenis3.html">Geschiedenis</a>
+        <a href="winkelwagen2.html">Winkelwagen</a>
+        <a href="sale.html">Sale</a>
+    </nav>
+
+    <div class="rij">
+        <!-- rij met producten -->
         <div class="rij">
-             <!-- Elk blok hieronder is een product met afbeelding, prijs en knop -->
-            <div class="product">
-                <img src="2025-jaarembleem.jpg" alt="jaarembleem 2025">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-                <img src="2024-jaarembleem.jpg" alt="jaarembleem 2024">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-                <img src="2023-jaarembleem.jpg" alt="jaarembleem 2023">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-                <img src="jaarembleem2022.jpg" alt="jaarembleem 2022">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
+            <!-- Elk product bestaat uit een afbeelding, prijs en knop --> 
+            <div class="product"><img src="2024-jaarembleem.jpg" alt="jaarembleem 2024"><p class="prijs">€7,50</p><button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button></div>
+            <div class="product"><img src="2023-jaarembleem.jpg" alt="jaarembleem 2023"><p class="prijs">€7,50</p><button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button></div>
+            <div class="product"><img src="jaarembleem2022.jpg" alt="jaarembleem 2022"><p class="prijs">€7,50</p><button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button></div>
+            <div class="product"><img src="borrelt-gr.jpg" alt="jaarembleem 2021"><p class="prijs">€7,50</p><button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button></div>
         </div>
-
-        <div class="rij">
-
-            <div class="product">
-                <img src="borrelt-gr.jpg" alt="jaarembleem 2021">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-                <img src="jaarembleem2020 (1).jpg" alt="jaarembleem 2020">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-                <img src="2019gr.jpg" alt="jaarembleem 2019">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-                <img src="jaarembleem2018.jpg" alt="jaarembleem 2018">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-        </div>
-
-        <div class="rij">
-
-            <div class="product">
-                <img src="2017gr.jpg" alt="jaarembleem 2017">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-                <img src="jaarembleem-2016.jpg" alt="jaarembleem 2016">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-                <img src="2015.jpg" alt="jaarembleem 2015">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-            <img src="2014.jpg" alt="jaarembleem 2014">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-        </div>
-
-        <div class="rij">
-
-            <div class="product">
-                <img src="2013.jpg" alt="jaarembleem 2013">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-                <img src="2012.jpg" alt="jaarembleem 2012">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-                <img src="2011.jpg" alt="jaarembleem 2011">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-            <img src="2010.jpg" alt="jaarembleem 2010">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-        </div>
-
-        <div class="rij">
-
-            <div class="product">
-                <img src="2009.jpg" alt="jaarembleem 2009">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-                <img src="2025-jaarembleem.jpg" alt="">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-
-            </div>
-
-            <div class="product">
-                <img src="2025-jaarembleem.jpg" alt="">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-            <img src="2025-jaarembleem.jpg" alt="">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-        </div>
-
-        <div class="rij">
-
-            <div class="product">
-                <img src="2025-jaarembleem.jpg" alt="">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-                <img src="2025-jaarembleem.jpg" alt="">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-                <img src="2025-jaarembleem.jpg" alt="">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-            <img src="2025-jaarembleem.jpg" alt="">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-        </div>
-
-        <div class="rij">
-
-            <div class="product">
-                <img src="2025-jaarembleem.jpg" alt="">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-                <img src="2025-jaarembleem.jpg" alt="">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-                <img src="2025-jaarembleem.jpg" alt="">
-                <P>€7,50</P>
-            </div>
-
-            <div class="product">
-            <img src="2025-jaarembleem.jpg" alt="">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-        </div>
-
-        <div class="rij">
-
-            <div class="product">
-                <img src="2025-jaarembleem.jpg" alt="">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-                <img src="2025-jaarembleem.jpg" alt="">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-                <img src="2025-jaarembleem.jpg" alt="">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-
-            <div class="product">
-            <img src="2025-jaarembleem.jpg" alt="">
-                <P>€7,50</P>
-                <button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button>
-            </div>
-        </div>
-        </div>
-    </body>
-    <!-- Voettekst onderaan de pagina -->
-    <footer>
-        <p>&copy; oetelatelier. Alle rechten voorbehouden.</p>
-        <p><a href="nieuw.html">Klik hier om te shoppen</a></p>
-    </footer>
+    </div>
+    <div class="rij">
+        <div class="product"><img src="jaarembleem2020 (1).jpg" alt="jaarembleem 2020"><p class="prijs">€7,50</p><button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button></div>
+        <div class="product"><img src="2019gr.jpg" alt="jaarembleem 2019"><p class="prijs">€7,50</p><button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button></div>
+        <div class="product"><img src="jaarembleem2018.jpg" alt="jaarembleem 2018"><p class="prijs">€7,50</p><button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button></div>
+        <div class="product"><img src="2017gr.jpg" alt="jaarembleem 2017"><p class="prijs">€7,50</p><button class="winkelwagenbutton" onclick="alert('artikel is toegevoegd aan de winkelwagen')">Voeg toe aan winkelwagen</button></div>
+    </div>
+<footer>
+    <p>&copy; oetelatelier. Alle rechten voorbehouden.</p>
+    <p><a href="nieuw.html">Klik hier om te shoppen</a></p>
+</footer>
+</body>
 </html>
-
-            

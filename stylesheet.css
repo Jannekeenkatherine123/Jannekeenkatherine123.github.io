@@ -1,7 +1,7 @@
-/*hieronder komt homepage/index*/
+/*hieronder komt homepage of index*/
 /* Voor html en body gelden volgende regels */
 html, body {
-    height: 0%;
+    height: 100%;
     display: flex;
     margin: 0%;
     flex-direction: column;
@@ -406,6 +406,8 @@ footer {
     padding: 20px;
     font-size: 14px;
     margin-top: 40px;
+    margin-top: auto;
+
 }
 
 footer a {
