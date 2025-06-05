@@ -1,3 +1,4 @@
+/*hieronder komt homepage/index*/
 /* Voor html en body gelden volgende regels */
 html, body {
     height: 0%;
@@ -55,7 +56,7 @@ Homepage hierboven
 
 /* Voor html en body gelden volgende regels */
 html, body {
-  height: 100%;
+  
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -86,7 +87,7 @@ footer {
   color: black;
   text-align: center;
   padding: 20px;
-  font-size: 14px;
+  font-size: 50px;
 }
 
 /* Linkjes in de footer */
