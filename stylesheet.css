@@ -12,6 +12,18 @@ html, body {
     background-size: cover;
 }
  
+/*html, body voor geschiedenis pagina*/
+#geschiedenispagina {
+    height: 100%; /* Laat body het hele scherm vullen */
+    margin: 0; /* Verwijdert standaard witmarges */
+    display: flex;
+    flex-direction: column;  /* Zorgt dat alle elementen van boven naar beneden worden gezet */
+     background-image: url('oeteldonkse-vlag-carnaval-hertogenboschVAopIFNbYU0od_600x600@2x.jpg');/* Achtergrondafbeelding */
+    background-repeat: no-repeat; /* Voorkomt dat de afbeelding zich herhaalt */
+    background-attachment: fixed; /* Achtergrond blijft vaststaan bij scrollen */
+    background-size: 100% 100%; /* Zorgt dat de achtergrond over het hele scherm wordt uitgesmeerd */
+  }
+
 /* Navigatiebalk bovenaan de pagina */
 nav#kop1 {
     display: flex;
@@ -27,14 +39,14 @@ nav#kop1 a {
     color: rgb(248, 4, 4);
 }
  
-/* Hoofdinhoud van de pagina */
+/* Hoofdinhoud van de home pagina */
 .content {
     flex: 1;
     color: white;
     text-align: center;
     padding: 100px 20px;
+    margin-top: 12%;
 }
-
 
 
         .rij {
@@ -70,7 +82,26 @@ nav#kop1 a {
         .prijs {
             color: rgb(0, 0, 0);  /* Rode kleur voor prijs */
         }
- 
+    
+    /* Stijl voor titels binnen de boxen bij geschiedenis3*/
+    .box h1 {
+        color: black;
+      }
+  
+      .box {
+        
+        padding: 20px;
+        margin: 10px;
+        background-color: rgba(255,255,255,0.8); /* Witte transparante achtergrond voor leesbaarheid */
+      }
+  
+      .box img {
+        width: 100%; /* Afbeelding vult volledige breedte van de box */
+        margin-top: 10px;
+        border-radius: 8px; 
+      }/* Afgeronde hoeken voor een mooie uitstraling */
+    /* stijlelementen sale pagina*/
+   
 /* Voettekst onderaan de pagina */
 footer {
     background-color: rgba(255, 204, 101, 1);

@@ -1,72 +1,11 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
+  <link rel="stylesheet" href="stylesheet.css">
   <title>Geschiedenis van Oeteldonk</title>
-  <!--opmaak van de pagina-->
-  <style>
-    /* Voor html en body gelden volgende regels */
-    html, body {
-      height: 100%; /* Laat body het hele scherm vullen */
-      margin: 0; /* Verwijdert standaard witmarges */
-      display: flex;
-      flex-direction: column;  /* Zorgt dat alle elementen van boven naar beneden worden gezet */
-       background-image: url('oeteldonkse-vlag-carnaval-hertogenboschVAopIFNbYU0od_600x600@2x.jpg');/* Achtergrondafbeelding */
-      background-repeat: no-repeat; /* Voorkomt dat de afbeelding zich herhaalt */
-      background-attachment: fixed; /* Achtergrond blijft vaststaan bij scrollen */
-      background-size: 100% 100%; /* Zorgt dat de achtergrond over het hele scherm wordt uitgesmeerd */
-    }
-/* Navigatiebalk bovenaan de pagina */
-    nav#kop1 {
-      display: flex;/* Zet de links naast elkaar */
-      justify-content: space-around; /* Verspreidt de links gelijk over de breedte */
-      background-color: rgb(240, 125, 125); /* Achtergrondkleur van de navigatie */
-      padding: 15px; /* Ruimte rondom de tekst in de balk */
-    }
- /* Opmaak van de links in de navigatie */
-    nav#kop1 a {
-      padding: 5px;
-      text-decoration: none; /* Geen onderlijning */
-      color: rgb(250, 0, 0);  /* Rode tekstkleur */
-    }
- /* Voettekst onderaan de pagina */
-    footer {
-      background-color: rgba(255, 204, 101, 1);/* Goudgele achtergrond */
-      color: black;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
- /* Linkjes in de footer */
-    footer a {
-      color: rgb(23, 1, 1);  /* Donkerrode kleur */
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline; /* Onderstreept bij hover */
-
-    }
-/* Stijl voor titels binnen de boxen */
-    .box h1 {
-      color: black;
-    }
-
-    .box {
-      
-      padding: 20px;
-      margin: 10px;
-      background-color: rgba(255,255,255,0.8); /* Witte transparante achtergrond voor leesbaarheid */
-    }
-
-    .box img {
-      width: 100%; /* Afbeelding vult volledige breedte van de box */
-      margin-top: 10px;
-      border-radius: 8px; 
-    }/* Afgeronde hoeken voor een mooie uitstraling */
-  </style>
+  <!-- voor opmaak pagina zie CSS-->
 </head>
-<body>
+<body id="geschiedenispagina">
 <!-- Navigatiebalk bovenaan met links naar andere pagina's -->
 <nav id="kop1">
   <a href="index.html">Home</a>
@@ -151,6 +90,7 @@
 <img src="Carnaval-Den-Bosch-2.jpg" alt="carnaval 2025">
 </div>
 <!-- (dezelfde structuur blijft herhaald voor alle jaartallen) -->
+
 <footer>
   <p>&copy; oetelatelier. Alle rechten voorbehouden.</p>
   <p><a href="nieuw.html">Klik hier om te shoppen</a></p>
