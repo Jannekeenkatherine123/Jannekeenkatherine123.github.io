@@ -37,6 +37,7 @@
             color: white; /* Witte tekst op de achtergrondafbeelding */
             text-align: center;
             padding: 100px 20px; /* Ruimte rondom de tekst */
+            margin-top: 11%;
         }
 
         /* Voettekst onderaan de pagina */
@@ -56,17 +57,24 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        .onderkant{
+            position:absolute;
+            bottom:0;
+            width:100%
+        }
+
     </style>
 </head>
 <body>
 
     <!-- Navigatiebalk -->
     <nav id="kop1">
-        <a href="index1.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="nieuw.html">Shoppen</a>
         <a href="Geschiedenis3.html">Geschiedenis</a>
         <a href="winkelwagen2.html">Winkelwagen</a>
-        <a href="Sale.html">Sale</a>
+        <a href="sale.html">sale</a>
     </nav>
 
     <!-- tekst op pagina -->
@@ -76,7 +84,8 @@
     </div>
 
     <!-- Voettekst website met extra link naar shoppen -->
-    <footer>
+
+    <footer class="onderkant">
         <p>&copy; oetelatelier. Alle rechten voorbehouden.</p>
         <p><a href="nieuw.html">Klik hier om te shoppen</a></p>
     </footer>
