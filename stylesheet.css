@@ -67,21 +67,6 @@ html, body {
   background-size: 100% 100%;
 }
 
-/* Navigatiebalk bovenaan de pagina */
-nav#kop1 {
-  display: flex;
-  justify-content: space-around;
-  background-color: rgb(240, 125, 125);
-  padding: 15px;
-}
-
-/* Opmaak van de links in de navigatie */
-nav#kop1 a {
-  padding: 5px;
-  text-decoration: none;
-  color: rgb(250, 0, 0);
-}
-
 /* Voettekst onderaan de pagina */
 footer {
   background-color: rgba(255, 204, 101, 1);
@@ -131,21 +116,6 @@ html, body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-}
-
-/* Navigatiebalk bovenaan */
-nav#kop1 {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(240, 125, 125);
-    padding: 15px;
-}
-
-/* Opmaak van de links in de navigatie */
-nav#kop1 a {
-    padding: 5px;
-    text-decoration: none;
-    color: rgb(250, 0, 0);
 }
 
 /* Algemene stijl voor alle divs */
@@ -220,21 +190,6 @@ html, body {
     background-size: 100% 100%;
 }
 
-/* Navigatiebalk bovenaan de pagina */
-nav#kop1 {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(240, 125, 125);
-    padding: 15px;
-}
-
-/* Navigatielinks */
-nav#kop1 a {
-    padding: 5px;
-    text-decoration: none;
-    color: rgb(250, 0, 0);
-}
-
 /* Algemene div-opmaak voor secties */
 div {
     padding: 1%;
@@ -307,22 +262,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: white;
     text-align: center;
-}
-
-/* Navigatiebalk bovenaan */
-#kop1 {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(240, 125, 125);
-    padding: 10px 0;
-}
-
-/* Navigatielinks */
-#kop1 a {
-    padding: 5px 15px;
-    text-decoration: none;
-    color: rgb(250, 0, 0);
-    font-weight: bold;
 }
 
 /* Oeteldonk-kleurenbalken */

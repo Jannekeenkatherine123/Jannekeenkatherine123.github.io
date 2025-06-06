@@ -16,13 +16,22 @@
             background-color: rgb(240, 125, 125); /* Roze achtergrondkleur */
             padding: 10px 0;
         }
-/* Links in de navigatiebalk */
-        #kop1 a {
-            padding: 5px 15px;
-            text-decoration: none;  /* Geen onderstreping */
-            color: rgb(250, 0, 0);  /* Rode tekstkleur */
-            font-weight: bold;
+
+         nav#kop1 {
+            display: flex; /* Zet de navigatielinks op één rij */
+            justify-content: space-around;   /* Verdeel links gelijkmatig */
+            background-color: rgb(240, 125, 125); /* roze achtergrond */
+            padding: 15px; /* Binnenmarge rondom de links */
         }
+
+        nav#kop1 a {
+            padding: 5px; /* Binnenruimte rondom tekst */
+            text-decoration: none;  /* Verwijdert onderstreping van de link */
+            color: red;
+        }
+
+
+
  /* Kleurenbalken onder de navigatie */
         #kleur1 {
             background-color: red;
